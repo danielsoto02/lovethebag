@@ -227,6 +227,7 @@ hr {
     top: 160px;
     height: 780px;
     background: #EA243D;
+    z-index: 4;
 }
 
 .header-img {
@@ -289,6 +290,7 @@ body .text-scroll {
     align-items: center;
     justify-content: center;
     margin-top: 160px;
+    z-index:3;
 }
 
 .text-scroll .desk {
@@ -562,9 +564,16 @@ body .text-scroll {
 .icon-holder img {
     width: 80px;
 }
+
 @media screen and (max-width:1400px) {
     .step-card {
         margin: 3vw 7vw 3vw 13vw;
+    }
+
+    .title-2 h2 {
+
+        font-size: 2.7rem;
+
     }
 
 }
@@ -750,6 +759,10 @@ body .text-scroll {
         gap: 5vw;
     }
 
+    .title-5 h2 {
+        font-size: 2.7rem;
+    }
+
 }
 
 /* section-6 */
@@ -776,7 +789,7 @@ body .text-scroll {
 .ig-holder {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
@@ -807,11 +820,20 @@ body .text-scroll {
     background-image: url(imgs/ig-img-4.png);
 }
 
-@media screen and (max-width:1400px) and (min-width:800px){
-    .img-4{
+@media screen and (max-width:1400px) and (min-width:800px) {
+    .img-4 {
         display: none;
     }
 }
+
+@media screen and (max-width:1400px) {
+    .title-6 h2 {
+        font-size: 2.7rem;
+    }
+
+}
+
+
 
 .post::before {
     content: "";
@@ -844,6 +866,7 @@ body .text-scroll {
     color: #EA243D;
     font-size: 2.3rem;
     font-weight: 300;
+    text-align: center;
 }
 
 .social-icons a img {
@@ -886,3 +909,5 @@ body .text-scroll {
     text-align: center;
     line-height: 150%;
 }
+
+
