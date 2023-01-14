@@ -289,7 +289,6 @@ body .text-scroll {
     align-items: center;
     justify-content: center;
     margin-top: 160px;
-    overflow: hidden;
 }
 
 .text-scroll .desk {
@@ -298,22 +297,17 @@ body .text-scroll {
     font-weight: 300;
     font-size: 1.3rem;
     display: block;
-    position: absolute;
-    white-space: nowrap;
-    animation: anim 100s linear infinite;
-    overflow: hidden;
+}
+
+.text-scroll .mobile {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.3rem;
+    display: none;
 }
 
 
-@keyframes anim {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
 
 
@@ -325,6 +319,10 @@ body .text-scroll {
 
     .text-scroll .mobile {
         display: block;
+    }
+
+    .text-scroll .desk {
+        display: none;
     }
 
     .header-img {
@@ -481,7 +479,7 @@ body .text-scroll {
 
     .title h2 {
         font-size: 2.7rem;
-        padding: 205px 0 60px 0;
+        padding: 100px 0 60px 0;
     }
 
     .row-2 {
@@ -504,6 +502,7 @@ body .text-scroll {
     display: flex;
     justify-content: center;
     width: 100vw;
+    text-align: center;
 }
 
 .title-2 h2 {
@@ -563,7 +562,12 @@ body .text-scroll {
 .icon-holder img {
     width: 80px;
 }
+@media screen and (max-width:1400px) {
+    .step-card {
+        margin: 3vw 7vw 3vw 13vw;
+    }
 
+}
 
 @media screen and (max-width:700px) {
 
@@ -692,6 +696,7 @@ body .text-scroll {
     font-weight: 400;
     color: black;
     font-size: 3.5rem;
+    text-align: center;
 }
 
 .text-box {
@@ -765,12 +770,13 @@ body .text-scroll {
     color: black;
     font-size: 3.5rem;
     margin-bottom: 75px;
+    text-align: center;
 }
 
 .ig-holder {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -778,8 +784,8 @@ body .text-scroll {
 .img-2,
 .img-3,
 .img-4 {
-    width: 265px;
-    height: 265px;
+    width: 275px;
+    height: 275px;
     background-color: black;
     background-size: cover;
     position: relative;
@@ -801,12 +807,16 @@ body .text-scroll {
     background-image: url(imgs/ig-img-4.png);
 }
 
-
+@media screen and (max-width:1400px) and (min-width:800px){
+    .img-4{
+        display: none;
+    }
+}
 
 .post::before {
     content: "";
-    width: 265px;
-    height: 265px;
+    width: 275px;
+    height: 275px;
     background-color: black;
     position: absolute;
     opacity: 40%;
